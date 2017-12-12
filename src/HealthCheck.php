@@ -118,7 +118,7 @@ class HealthCheck {
     $r[5] = round($avg[1], 3);
     $r[15] = round($avg[2], 3);
     
-    return (object) $r;
+    return $r;
     
   }
   
