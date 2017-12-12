@@ -75,26 +75,29 @@ class HealthCheck {
   	
   }
   
-  public function totalMemory() {
+  public function totalMemory($unit = 'MB') {
     
     $i = $this->memoryInfo();    
-    return $this->bytesAsOtherUnits($i->total);
+    $ret = $this->bytesAsOtherUnits($i->total);
+    return $ret->$unit;
     
   }
   
-  public function memoryPhysicallyFree() {
+  public function memoryPhysicallyFree($unit = 'MB') {
     
     $i = $this->memoryInfo();    
     $r = $i->total - ($i->used - $i->buffers - $i->cached);
-    return $this->bytesAsOtherUnits($r);
+    $ret = $this->bytesAsOtherUnits($r);
+    return $ret->$unit;
 
   }
   
-  public function memoryPhysicallyUsed() {
+  public function memoryPhysicallyUsed($unit = 'MB') {
     
     $i = $this->memoryInfo();    
     $r = $i->used - $i->buffers - $i->cached;
-    return $this->bytesAsOtherUnits($r);
+    $ret = $this->bytesAsOtherUnits($r);
+    return $ret->$unit;
     
   }
   
