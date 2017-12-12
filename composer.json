@@ -1,5 +1,5 @@
 {
-	"name": "richbarrett/HealthCheck",
+	"name": "richbarrett/health-check",
 	"homepage": "https://github.com/richbarrett7/HealthCheck",
 	"description": "Very lightweight tool for checking some server level health data (designed to work with Ubuntu)",
 	"license": "MIT",
