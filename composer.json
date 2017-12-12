@@ -1,0 +1,23 @@
+{
+	"name": "richbarrett/HealthCheck",
+	"homepage": "https://github.com/richbarrett7/HealthCheck",
+	"description": "Very lightweight tool for checking some server level health data (designed to work with Ubuntu)",
+	"license": "MIT",
+	"keywords": ["ubuntu","memory","cpu","disk","health"],
+  "version": "0.1",
+	"authors": [
+	{
+		"name": "Richard Barrett",
+		"email": "rbarrett1@gmail.com"
+	}
+	],
+	"require": {
+      "nategood/httpful": "^0.2.20",
+      "php": ">=5.6.0"
+  },
+	"autoload": {
+		"classmap": [
+		"src/HealthCheck.php"
+		]
+	}
+}
