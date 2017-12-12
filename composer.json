@@ -12,7 +12,6 @@
 	}
 	],
 	"require": {
-      "nategood/httpful": "^0.2.20",
       "php": ">=5.6.0"
   },
 	"autoload": {
